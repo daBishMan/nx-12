@@ -145,6 +145,28 @@
                     }
                 }
             }
+        },
+        "client-state": {
+            "projectType": "library",
+            "root": "libs/client-state",
+            "sourceRoot": "libs/client-state/src",
+            "prefix": "wsl-nx-ng",
+            "architect": {
+                "test": {
+                    "builder": "@nrwl/jest:jest",
+                    "outputs": ["coverage/libs/client-state"],
+                    "options": {
+                        "jestConfig": "libs/client-state/jest.config.js",
+                        "passWithNoTests": true
+                    }
+                },
+                "lint": {
+                    "builder": "@nrwl/linter:eslint",
+                    "options": {
+                        "lintFilePatterns": ["libs/client-state/src/**/*.ts", "libs/client-state/src/**/*.html"]
+                    }
+                }
+            }
         }
     }
 }

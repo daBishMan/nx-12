@@ -25,6 +25,9 @@
         "client-app-e2e": {
             "tags": [],
             "implicitDependencies": ["client-app"]
+        },
+        "client-state": {
+            "tags": []
         }
     }
 }

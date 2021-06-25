@@ -14,7 +14,9 @@
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "@wsl-nx-ng/client-state": ["libs/client-state/src/index.ts"]
+        }
     },
     "exclude": ["node_modules", "tmp"]
 }
